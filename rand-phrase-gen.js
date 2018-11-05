@@ -1,10 +1,10 @@
 'use strict';
 //// DECLARATIONS ////
-const fs = require('fs');
-const nounsData = fs.readFileSync('nouns.json');
-const adjsData = fs.readFileSync('adjectives.json');
-const nouns = JSON.parse(nounsData).nouns;
-const adjs = JSON.parse(adjsData).adjs;
+var fs = require('fs');
+var nounsData = fs.readFileSync('nouns.json');
+var adjsData = fs.readFileSync('adjectives.json');
+var nouns = JSON.parse(nounsData).nouns;
+var adjs = JSON.parse(adjsData).adjs;
 
 //// HELPER FUNCTIONS ////
 function capitalizeFirstLetter(string) {
@@ -12,8 +12,8 @@ function capitalizeFirstLetter(string) {
 }
 
 //// OUTPUT SECTION ////
-let randNoun = capitalizeFirstLetter(nouns[Math.floor(Math.random()*nouns.length)]);
-let randAdj = capitalizeFirstLetter(adjs[Math.floor(Math.random()*adjs.length)]);
+var randNoun = capitalizeFirstLetter(nouns[Math.floor(Math.random()*nouns.length)]);
+var randAdj = capitalizeFirstLetter(adjs[Math.floor(Math.random()*adjs.length)]);
 console.log("");
-console.log(`${randAdj} ${randNoun}`);
+console.log(randAdj + ' ' +randNoun);
 console.log("");
