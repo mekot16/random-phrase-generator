@@ -14,4 +14,6 @@ function capitalizeFirstLetter(string) {
 //// OUTPUT SECTION ////
 let randNoun = capitalizeFirstLetter(nouns[Math.floor(Math.random()*nouns.length)]);
 let randAdj = capitalizeFirstLetter(adjs[Math.floor(Math.random()*adjs.length)]);
+console.log("");
 console.log(`${randAdj} ${randNoun}`);
+console.log("");
